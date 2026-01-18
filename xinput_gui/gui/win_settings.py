@@ -21,7 +21,7 @@
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
-from pkg_resources import resource_filename
+from importlib.resources import files
 
 from ..settings import Settings
 
@@ -53,7 +53,7 @@ class SettingsWindow:
 
         builder = Gtk.Builder()
         builder.add_objects_from_file(
-            resource_filename('xinput_gui', 'res/xinput-gui.ui'),
+            str(files('xinput_gui').joinpath('res/xinput-gui.ui')),
             ['win_settings'])
         return builder
 

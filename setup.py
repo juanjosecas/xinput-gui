@@ -14,6 +14,7 @@ setup(
     author_email='ivanfon@riseup.net',
     url='https://github.com/IvanFon/xinput-gui',
     license='GPLv3+',
+    python_requires='>=3.10,<=3.12',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: X11 Applications :: GTK',
@@ -22,10 +23,9 @@ setup(
         'Natural Language :: English',
         'Operating System :: POSIX',
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Topic :: Desktop Environment',
         'Topic :: Utilities'
     ],

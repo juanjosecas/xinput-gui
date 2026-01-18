@@ -23,7 +23,7 @@ from typing import TYPE_CHECKING
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
-from pkg_resources import resource_filename
+from importlib.resources import files
 
 if TYPE_CHECKING:
     from ..view_controller import ViewController
@@ -53,7 +53,7 @@ class CreateMasterDialog:
 
         builder = Gtk.Builder()
         builder.add_objects_from_file(
-            resource_filename('xinput_gui', 'res/xinput-gui.ui'),
+            str(files('xinput_gui').joinpath('res/xinput-gui.ui')),
             ['dialog_create_master'])
         return builder
 

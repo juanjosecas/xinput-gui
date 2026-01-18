@@ -14,7 +14,7 @@ setup(
     author_email='ivanfon@riseup.net',
     url='https://github.com/IvanFon/xinput-gui',
     license='GPLv3+',
-    python_requires='>=3.10,<=3.12',
+    python_requires='>=3.10,<3.13',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: X11 Applications :: GTK',
